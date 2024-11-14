@@ -16,7 +16,7 @@ const FaqAccordion = ({ items }) => {
           className="mb-4 overflow-hidden rounded-xl shadow-lg transition-all duration-300 ease-in-out transform hover:scale-102"
         >
           <button
-            className={`flex items-center justify-between w-full p-6 bg-gradient-to-r from-indigo-500 to-purple-600 text-white focus:outline-none transition-all duration-300 ${
+            className={`flex items-center justify-between w-full p-6 bg-gradient-to-r from-blue-900 to-gray-700 text-white focus:outline-none transition-all duration-300 ${
               openIndex === index ? "rounded-t-xl" : "rounded-xl"
             }`}
             onClick={() => handleToggle(index)}

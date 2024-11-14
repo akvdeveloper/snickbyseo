@@ -45,7 +45,7 @@ const Milestone = () => {
       <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-3xl font-bold my-10 sm:my-16 md:my-20">
         MILESTONES
       </h1>
-      <div className="grid grid-cols-2 gap-8 w-full max-w-4xl md:grid-cols-2 lg:grid-cols-4">
+      <div className="text-sm lg:text-3x grid grid-cols-2 gap-8 w-full max-w-4xl md:grid-cols-2 lg:grid-cols-4">
         {data.map(({ icon: Icon, count, description }, index) => (
           <div key={description} className="flex flex-col items-center">
             <Icon className="text-blue-500 text-4xl mb-2" aria-label={description} />

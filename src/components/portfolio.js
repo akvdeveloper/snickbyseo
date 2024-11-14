@@ -12,7 +12,7 @@ export default function Portfolio()  {
     ];
   
     return (
-      <div className="flex flex-col items-center justify-center min-h-screen py-16 px-4">
+      <div className="flex flex-col items-center justify-center py-10 lg:-py-16 px-4">
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-3xl font-bold my-10 sm:my-16 md:my-20">
           Portfolio
         </h1>

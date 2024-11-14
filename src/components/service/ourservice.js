@@ -28,7 +28,7 @@ const OurService = () => {
       <div className="flex border-b border-gray-200">
         <button
           className={`flex-1 py-4 px-6 text-lg font-semibold transition-colors duration-200 ${
-            activeTab === 'it' ? 'bg-indigo-600 text-white' : 'text-gray-600 hover:bg-indigo-50'
+            activeTab === 'it' ? 'bg-blue-900 text-white' : 'text-gray-600 hover:bg-indigo-50'
           }`}
           onClick={() => setActiveTab('it')}
         >
@@ -36,7 +36,7 @@ const OurService = () => {
         </button>
         <button
           className={`flex-1 py-4 px-6 text-lg font-semibold transition-colors duration-200 ${
-            activeTab === 'marketing' ? 'bg-indigo-600 text-white' : 'text-gray-600 hover:bg-indigo-50'
+            activeTab === 'marketing' ? 'bg-blue-900 text-white' : 'text-gray-600 hover:bg-indigo-50'
           }`}
           onClick={() => setActiveTab('marketing')}
         >

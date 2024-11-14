@@ -1,20 +1,16 @@
-"use client"; // Ensure this is at the top for client-side rendering
-
+"use client";
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
-
-// Utility function to combine class names
 function cn(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const pathname = usePathname(); // Get the current path
+  const pathname = usePathname(); 
  
-
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -38,12 +34,10 @@ function Header() {
           <Image
             src="/img/logo/logo.png"
             alt="SnickBySEO"
-            layout="intrinsic" 
-            width={200}       
-            height={80}         
-            sizes="100vw"             
+            width={160}       
+            height={80} 
+            style={{height: "auto" }} 
           />
-
           {/* <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
             SnickBySEO
           </span> */}
@@ -54,7 +48,7 @@ function Header() {
             type="button"
             className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
-            Get started
+            Get Quotes
           </button>
           <button
             type="button"

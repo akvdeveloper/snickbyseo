@@ -13,7 +13,7 @@ export default function ServiceCard({ icon, title, description, url }) {
       </div>
       <p className="text-gray-600">{description}</p>
       <button
-        className="mt-6 px-4 py-2 border-2 border-blue-600 text-blue-600 transition-colors duration-300 rounded-lg group-hover:bg-blue-600 group-hover:text-white"
+        className="mt-6 px-4 py-2 border-2 border-blue-900 text-blue-900 transition-colors duration-300 rounded-lg group-hover:bg-blue-900 group-hover:text-white"
         onClick={() => window.location.href = url}
       >
         Learn More
