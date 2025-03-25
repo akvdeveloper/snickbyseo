@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+
+  }
+}
+
+body {
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+.hero-slider .slick-dots {
+  position: absolute; /* Changed to absolute for better positioning */
+  bottom: 20px; /* Position the dots above the bottom */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Align to the center */
+  z-index: 3 !important; /* Ensure dots are above other elements */
+}
+
+.hero-slider .slick-dots li {
+  margin: 0 5px; /* Space between dots */
+}
+
+.hero-slider .slick-dots li button {
+  width: 10px; /* Set a fixed width for the dot */
+  height: 10px; /* Set a fixed height for the dot */
+  border-radius: 50%; /* Round shape */
+  background-color: gray; /* Default background color for inactive dots */
+  opacity: 0.5; /* Slightly transparent */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.hero-slider .slick-dots li.slick-active button {
+  background-color: navy; /* Change color for active dot */
+  opacity: 1; /* Fully opaque for active dot */
+}
