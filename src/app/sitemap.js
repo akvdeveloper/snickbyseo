@@ -1,20 +1,30 @@
-// app/sitemap.js
-export default async function sitemap() {
-    const baseUrl = "https://snickbyseo.vercel.app";
-    
-    // List all your static and dynamic routes
-    const routes = [
-      { url: baseUrl, lastModified: new Date() },               // Homepage
-      { url: `${baseUrl}/about`, lastModified: new Date() },    // About page
-      { url: `${baseUrl}/services`, lastModified: new Date() }, // Services
-      { url: `${baseUrl}/blog`, lastModified: new Date() },     // Blog
-      { url: `${baseUrl}/contact`, lastModified: new Date() },  // Contact
-    ];
-  
-    // Add dynamic routes here (e.g., blog posts fetched from an API/CMS)
-    // Example:
-    // const posts = await fetch('your-api-endpoint').then(res => res.json());
-    // const dynamicRoutes = posts.map(post => ({ url: `${baseUrl}/blog/${post.slug}`, lastModified: new Date(post.updatedAt) }));
-    
-    return [...routes /*, ...dynamicRoutes */];
-  }
+export async function GET() {
+  const baseUrl = "https://snickbyseo.vercel.app";
+
+  const staticRoutes = [
+    { url: baseUrl, lastModified: new Date() },
+    { url: `${baseUrl}/about`, lastModified: new Date() },
+    { url: `${baseUrl}/services`, lastModified: new Date() },
+    { url: `${baseUrl}/blog`, lastModified: new Date() },
+    { url: `${baseUrl}/contact`, lastModified: new Date() },
+  ];
+
+  const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
+  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    ${staticRoutes
+      .map(
+        (route) => `
+      <url>
+        <loc>${route.url}</loc>
+        <lastmod>${route.lastModified.toISOString()}</lastmod>
+      </url>`
+      )
+      .join("")}
+  </urlset>`;
+
+  return new Response(sitemapXml, {
+    headers: {
+      "Content-Type": "application/xml",
+    },
+  });
+}
