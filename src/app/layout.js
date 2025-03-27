@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
         <meta name="google-site-verification" content="SzBGgszI5p-Xj-YkDbJJtNbb4lc0oTWjSJNzqagmeYo" />
-        <meta name="google-site-verification" content="Q0_R_JgQMbNCaxPZCVH8OIr3uYKRupDiK_B6cvS4zbM" />
+        <link rel="canonical" href="https://snickbyseo.vercel.app" />
   
       </head>
       <body>
