@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
           rel="stylesheet"
         />
-        <meta name="google-site-verification" content="SzBGgszI5p-Xj-YkDbJJtNbb4lc0oTWjSJNzqagmeYo" />
+        <meta name="google-site-verification" content="2sCwDPkJ_1OWhHA0d_SvehUA_dSyflXrfqs6divY3FU" />
         <link rel="canonical" href="https://snickbyseo.vercel.app" />
   
       </head>
