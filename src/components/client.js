@@ -5,12 +5,13 @@ import Image from 'next/image';
 
 const ClientsCarousel = () => {
   const clients = [
-    { id: 1, src: '/img/client/client-1.png', alt: 'Client 1' },
-    { id: 2, src: '/img/client/client-1.png', alt: 'Client 2' },
-    { id: 3, src: '/img/client/client-1.png', alt: 'Client 3' },
-    { id: 4, src: '/img/client/client-1.png', alt: 'Client 4' },
-    { id: 5, src: '/img/client/client-1.png', alt: 'Client 5' },
-    { id: 6, src: '/img/client/client-1.png', alt: 'Client 6' },
+    { id: 1, src: '/img/client/ssintsch.png', alt: 'SSIS ARA' },
+    { id: 2, src: '/img/client/times.jpg', alt: 'Times International School, Patna' },
+    { id: 3, src: '/img/client/rsis.jpg', alt: 'Rameshwar Singh International School, Gaya' },
+    { id: 4, src: '/img/client/jp-hospital.png', alt: 'JP Multi Specialist Hospital, Bhagalpur' },
+    { id: 5, src: '/img/client/Govind-Metabolic.png', alt: 'Govind Metabolic Hospital, Purnia' },
+    { id: 6, src: '/img/client/divya-infotech.jpg', alt: 'Divya Infratech' },
+    { id: 6, src: '/img/client/divya-fun-park.jpg', alt: 'Divya Fun Park' },
   ];
 
   const settings = {
