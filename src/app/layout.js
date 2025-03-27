@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
           rel="stylesheet"
         />
-        <meta name="google-site-verification" content="xcd4mmdoV40ZwExMTuF0LVZNVmwYyW8O7MiRvqaDtNM" />
+        <meta name="google-site-verification" content="SzBGgszI5p-Xj-YkDbJJtNbb4lc0oTWjSJNzqagmeYo" />
   
       </head>
       <body>
