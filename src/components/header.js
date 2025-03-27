@@ -87,7 +87,7 @@ function Header() {
                     "block py-2 px-3 rounded md:p-0",
                     pathname === item.href
                       ? "text-orange-500 font-semibold"
-                      : "text-black hover:text-orange-500 hover:font-semibold"
+                      : "text-gray-300 hover:text-orange-500 hover:font-semibold"
                   )}
                   onClick={closeMenu}
                 >
